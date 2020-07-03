@@ -1,0 +1,29 @@
+﻿@{
+    Layout = null;
+}
+
+@model GuestFood
+
+<p>Hello Foodie!</p>
+
+<p>Name: @Model.Name</p>
+<p>Favorite Food: @Model.Food</p>
+<p>Favorite Drink: @Model.Drink</p>
+
+<form asp-controller="Home" asp-action="Food" method="post">
+    <p>Name: <input asp-for="Name" /></p>
+    <p>Favorite Food: <input asp-for="Food" /></p>
+    <p>Favorite Drink: <input asp-for="Drink" /></p>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+<p>
+
+</p>
+<a asp-controller="Home"
+   asp-action="Index"
+   asp-route-id="12">
+    Home page
+</a>

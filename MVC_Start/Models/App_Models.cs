@@ -5,14 +5,14 @@ using System.Threading.Tasks;
 
 namespace MVC_Start.Models
 {
-  public class GuestContact
-  {
-    public string Name { get; set; }
-    public string Email { get; set; }
-    public string Phone { get; set; }
-  }
+    public class GuestFood
+    {
+        public string Name { get; set; }
+        public string Food { get; set; }
+        public string Drink { get; set; }
+    }
 
-  public class ChartModel
+    public class ChartModel
   {
     public string ChartType { get; set; }
     public string Labels { get; set; }
